@@ -1,8 +1,13 @@
+# This is part of the "Struggling with JavaScript" aka doc-js book
+
+* https://leanpub.com/doc-js
+* If you want to contribute to the book or join me as a coauthor pool, please get in contact mgalli at mgalli dot com subject "doc-js book"
+
 # What about updating a component that uses map to filter out its element by a prop (sent from parent) 
 
 Example of an inner component, child of another, that filter its child elements checking their props against parent-informed prop.
 
-## Before 
+## Before
 
 ```
 import React from 'react'
@@ -13,7 +18,7 @@ const TodoList = ({ todos, toggleTodo }) => (
   <ul>
     {todos.map(todo =>
       <Todo
-        key={todo.id} 
+        key={todo.id}
         {...todo}
         onClick={() => toggleTodo(todo.id)}
       />
